@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "portcount"
+version = "0.1.0"
+description = "Turn any Linux host into a living inventory of ports, services, and containers."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+keywords = ["ports", "linux", "ops", "docker", "inventory", "systemd"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: System Administrators",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: System :: Networking :: Monitoring",
+  "Topic :: System :: Systems Administration",
+]
+
+[project.urls]
+Homepage = "https://github.com/proxyBug/portcount"
+Repository = "https://github.com/proxyBug/portcount"
+Issues = "https://github.com/proxyBug/portcount/issues"
+
+[project.scripts]
+portcount = "portcount.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["portcount*"]
