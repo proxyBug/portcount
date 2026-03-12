@@ -6,7 +6,7 @@
 
 Instead of bouncing between `ss`, `docker ps`, `systemctl`, shell history, and old notes, `portcount` turns the local host into a compact report you can read, diff, or commit.
 
-## Why this exists
+## When a host outgrows your memory
 
 A machine starts simple, then grows sharp edges:
 
