@@ -130,4 +130,4 @@ python -m portcount scan --format json
 
 ## License
 
-MIT
+GNU GPLv3
